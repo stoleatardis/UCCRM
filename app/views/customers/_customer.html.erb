@@ -1,13 +1,7 @@
-<div id="header">
-<h1>All Customers</h1>
-<%= link_to 'New Customer', new_customer_path %> - <span>Missing Emails</span>
-</div>
-
-<% @customers.each do |customer| %>
 <div class="customer">
   <span class="right">
     <%= link_to 'edit', edit_customer_path(customer) %>
-    <%= link_to 'x', customer, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <%= link_to 'x', customer, method: :delete, data: { confirm: 'Are you sure?' } %> 
   </span>
 
   <h2><%= customer.fullname %></h2>
@@ -32,6 +26,3 @@
     <%= customer.notes %>
   </p>
 </div>
-<%end%>
-
-
