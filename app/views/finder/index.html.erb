@@ -1,0 +1,8 @@
+<div id="header">
+<h1>All Customers</h1>
+<%= link_to 'New Customer', new_customer_path %> - <%= link_to 'Missing Emails', missing_email_path %> - <%= link_to 'Alphabetized', alphabetized_path %>
+</div>
+<% @customers.each do |customer| %>
+	<%= render customer %>
+<%end%>
+

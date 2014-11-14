@@ -1,0 +1,7 @@
+<div id="header">
+<h1>All Customers</h1>
+<%= link_to 'Home', root_path %>
+</div>
+<% @customers.each do |customer| %>
+  <%= render customer %>
+<%end%>
