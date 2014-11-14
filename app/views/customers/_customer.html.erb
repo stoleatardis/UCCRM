@@ -22,6 +22,15 @@
   </p>
 
   <p>
+  <strong>Province:</strong>
+  <% if customer.province.present? %>
+    <%= customer.province.name %>
+  <% else %>
+    Province: None
+  <% end %>
+  </p>
+
+  <p>
     <strong>Notes:</strong>
     <%= customer.notes %>
   </p>
